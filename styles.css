@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --b-orange: hsl(31, 77%, 52%);
+  --d-cyan: hsl(184, 100%, 22%);
+  --vd-cyan: hsl(179, 100%, 13%);
+
+  --white: hsla(0, 0%, 100%, 0.75);
+  --vl-gray: hsl(0, 0%, 95%);
+}
+
+.col {
+  padding: 5em 2em;
+}
+.sedans {
+  background-color: var(--b-orange);
+}
+
+.suvs {
+  background-color: var(--d-cyan);
+}
+.luxury {
+  background-color: var(--vd-cyan);
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  color: var(--white);
+}
+
+p {
+  font-family: "Lexend Deca";
+  color: var(--white);
+  font-size: 15px;
+  padding: 1em 0;
+  margin: 2em 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Lexend Deca";
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  padding: 1em;
+  border-radius: 40px;
+}
+
+.sedans a {
+  color: var(--b-orange);
+}
+
+.suvs a {
+  color: var(--d-cyan);
+}
+
+.luxury a {
+  color: var(--vd-cyan);
+}
+a:hover {
+  background-color: transparent;
+  color: var(--white);
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    display: flex;
+    height: 100%;
+  }
+}
