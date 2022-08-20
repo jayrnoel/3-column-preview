@@ -13,7 +13,7 @@
 }
 
 .col {
-  padding: 5em 2em;
+  padding: 2.8rem;
 }
 .sedans {
   background-color: var(--b-orange);
@@ -24,19 +24,6 @@
 }
 .luxury {
   background-color: var(--vd-cyan);
-}
-
-h1 {
-  font-family: "Big Shoulders Display";
-  color: var(--white);
-}
-
-p {
-  font-family: "Lexend Deca";
-  color: var(--white);
-  font-size: 15px;
-  padding: 1em 0;
-  margin: 2em 0;
 }
 
 a {
@@ -63,10 +50,55 @@ a:hover {
   background-color: transparent;
   color: var(--white);
 }
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  max-width: 880px;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-@media screen and (min-width: 600px) {
-  main {
-    display: flex;
-    height: 100%;
+.col h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  color: var(--white);
+  margin: 2rem 0;
+}
+
+.col p {
+  font-family: "Lexend Deca";
+  color: var(--white);
+  font-size: 15px;
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
+.col span {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    width: 90%;
+  }
+  .col {
+    padding: 2.8rem 2.2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    margin: 60px auto;
+    width: 70%;
+    flex-direction: column;
+  }
+  .col span {
+    margin-bottom: 2rem;
   }
 }
